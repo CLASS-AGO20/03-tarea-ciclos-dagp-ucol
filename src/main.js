@@ -26,21 +26,6 @@ export default class App {
     }
 
 
-    sumatoriaSerieDos(numero) {
-        let resultado; resultado = 0;
-        let x = 1;
-        while (x<=numero) {
-             if ((x % 2)==0) {
-                resultado = resultado + (1/x)
-             } else {
-                 resultado = resultado - (1/x)
-             }
-            x = x + 1;
-        }
-    resultado = resultado + 2;
-    return resultado;
-    }
-
     esPrimo(numero) {
         let resultado = 0;
         let x;
@@ -62,8 +47,19 @@ export default class App {
     }
 
 
+    obtenerMultiplos(inicio, fin) {
 
-} // No borrar 
+
+
+
+
+
+
+    return resultado;
+    }
+
+
+} // No borrar Fin de App
 
 let app = new App();
 console.log(app.sumatoriaSerieUno(5))
