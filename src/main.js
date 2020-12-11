@@ -48,13 +48,36 @@ export default class App {
 
 
     obtenerMultiplos(inicio, fin) {
+        let resultado = "";
+        let x = inicio;
+        do {
+            if ((x % 3)==0) {
+                resultado = resultado + x;
+            } else {
+                resultado = resultado;
+            }
+            x++;
+        } while (x<fin);
+    return resultado;
+    }
 
-
-
-
-
-
-
+    obtenerImpares(numero1, numero2) {
+    let resultado = "";
+    let mayor,menor;
+    if (numero1 < numero2) {
+        mayor = numero2; menor = numero1;
+    } else {
+        mayor = numero1; menor = numero2;
+    }
+    while (menor <= mayor) {
+        if ((menor % 2)==0) {
+            resultado = resultado;
+        } else {
+            resultado = (resultado + "," + menor);
+        }
+        menor++;
+    }
+    resultado = resultado.substr(1,resultado.length);
     return resultado;
     }
 
@@ -62,4 +85,8 @@ export default class App {
 } // No borrar Fin de App
 
 let app = new App();
-console.log(app.sumatoriaSerieUno(5))
+console.log(app.sumatoriaSerieUno(5));
+console.log(app.sumatoriaSerieDos(5));
+console.log(app.esPrimo(16546487));
+console.log(app.obtenerMultiplos(10,25));
+console.log(app.obtenerImpares(5,10));
