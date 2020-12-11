@@ -19,7 +19,7 @@ export default class App {
              } else {
                  resultado = resultado - (1/x)
              }
-            x = x + 1;
+            x++;
         }
     resultado = resultado + 2;
     return resultado;
