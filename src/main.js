@@ -103,4 +103,3 @@ console.log(app.sumatoriaSerieDos(5));
 console.log(app.esPrimo(16546487));
 console.log(app.obtenerMultiplos(10,25));
 console.log(app.obtenerImpares(5,10));
-console
