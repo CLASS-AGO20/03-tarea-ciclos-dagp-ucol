@@ -62,19 +62,21 @@ export default class App {
 
     obtenerImpares(numero1, numero2) {
     let resultado = "";
-    let mayor,menor;
+    let mayor,menor,mayorv2;
     if (numero1 < numero2) {
         mayor = numero2; menor = numero1;
     } else {
         mayor = numero1; menor = numero2;
     }
+    mayorv2 = mayor;
     while (menor <= mayor) {
         if ((menor % 2)==0) {
             resultado = resultado;
         } else {
-            resultado = (resultado + "," + menor);
+            resultado = (resultado + "," + mayorv2);
         }
         menor++;
+        mayorv2 = mayorv2 - 1;
     }
     resultado = resultado.substr(1,resultado.length);
     return resultado;
