@@ -1,6 +1,12 @@
+// Fundamentos de Prograación
+// Alumno: Diego Alejandro Gentner Polanco
+// 1er Semestre Grupo "H"
+
+
 export default class App {
 
 
+    // Determina la sumatoria con ciertas propiedades expuestas del maestro
     sumatoriaSerieUno(numero) {
         let resultado; resultado = 0;
         let x = 1;
@@ -10,6 +16,8 @@ export default class App {
     return resultado;
     }
 
+
+    // Determina la sumatoria con ciertas propiedades expuestas del maestro incluyendo sumas y restas
     sumatoriaSerieDos(numero) {
         let resultado; resultado = 0;
         let x = 1;
@@ -26,6 +34,7 @@ export default class App {
     }
 
 
+    // Determina si el numero es primo
     esPrimo(numero) {
         let resultado = 0;
         let x;
@@ -46,6 +55,7 @@ export default class App {
     }
 
 
+    // Se obtienen los múltiplos de 3 en determinado rango
     obtenerMultiplos(inicio, fin) {
         let resultado = "";
         let x = inicio;
@@ -60,6 +70,8 @@ export default class App {
     return resultado;
     }
 
+
+    // Se obtienen los numeros imapres y se suman en un string con ","
     obtenerImpares(numero1, numero2) {
     let resultado = "";
     let mayor,menor,mayorv2;
